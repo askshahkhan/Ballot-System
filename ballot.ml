@@ -1,4 +1,3 @@
-(* free code: don't worry, you aren't meant to understand this function yet. *)
 let get_ballot_lines bfile = 
   let ic = open_in bfile in
   let rec get_bl acc = 
@@ -50,7 +49,7 @@ let rec pad (l : int) s =
   if l <= 0 || l <= String.length(s) then s 
   else extra_spaces s (l - String.length s)
 
-(* free code: prints the list of rankings out *)
+(* prints the list of rankings out *)
 let print_rankings sl = 
   let padlen = max (String.length "Candidate") (max_len sl) in
   let () = print_endline ((pad padlen "Candidate") ^ " \t Score") in
