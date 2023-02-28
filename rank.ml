@@ -1,4 +1,4 @@
-(* a data type representing expressions.  Fill in: *)
+(* a data type representing expressions. *)
 type formula = 
 Const of float 
 | Sum of formula * formula 
